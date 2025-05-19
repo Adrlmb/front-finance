@@ -1,0 +1,51 @@
+body{
+  background-color: #2580a711;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+#btnBuy, #btnSell, #btnTransfer, #botaoNewTransaction{
+  width: 160px;
+  background-color: #ededed;
+  border: 1px solid #ababab;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+label{
+  text-align: center;
+  width: 140px;
+  height: 20px;
+  font-weight: 500;
+}
+
+input{
+  width: 125px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
+  text-indent: center;
+
+}
+
+#tableSize{
+  block-size: 750px;
+}
+
+/* table*/
+.table {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden !important;
+  border: 1px solid #000000;
+}
+
+
+.table thead th{
+  background-color: #44a271;
+  border: 1px solid #000000;  
+  padding: 10px;
+}
+
+
+
+
+

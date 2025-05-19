@@ -8,6 +8,8 @@ document.getElementById("usuarioForm").addEventListener("submit", function(event
     let amountSpent = document.getElementById("amountSpent").value;
     let taxCryptoCode = document.getElementById("taxCryptoCode").value;
     let taxAmount = document.getElementById("taxAmount").value;
+    let buyDate = document.getElementById("buyDate").value;
+    let exchange = document.getElementById("exchange").value;
     
 
     fetch(`http://localhost:8080/buy`, {
@@ -23,7 +25,8 @@ document.getElementById("usuarioForm").addEventListener("submit", function(event
             amountSpent: amountSpent,
             taxCryptoCode:taxCryptoCode,
             taxAmount:taxAmount,
-
+            buyDate: buyDate,
+            exchange: exchange     
     })
 
     })
@@ -64,7 +67,14 @@ async function carregarProdutos() {
 
                     <td>${buyDTO.id}</td>
                     <td>${buyDTO.code}</td>
+                    <td>${buyDTO.amountCryptoPurchased}</td>
                     <td>${buyDTO.codein}</td>
+                    <td>${buyDTO.cryptoValue}</td>
+                    <td>${buyDTO.amountSpent}</td>
+                    <td>${buyDTO.taxCryptoCode}</td>
+                    <td>${buyDTO.taxAmount}</td>
+                    <td>${buyDTO.buyDate}</td>
+                    <td>${buyDTO.exchange}</td>
                     <td>${buyDTO.profit}</td>
                     <td>
                         <button class="btn btn-danger btn-sm" onclick="removerLinha(${buyDTO.id}, this)">Excluir</button>
