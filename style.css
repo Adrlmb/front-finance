@@ -1,16 +1,23 @@
 body{
-  background-color: #2580a711;
+  background-color: #4a515411;
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
 
 #btnBuy, #btnSell, #btnTransfer, #botaoNewTransaction{
-  width: 160px;
+  width: 190px;
+  height: 60px;
   background-color: #ededed;
-  border: 1px solid #ababab;
+  border: 1px solid #000000;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 18px;
 }
+
+/* #portfolioTitle{
+  height: 100px;
+} */
+
 
 label{
   text-align: center;
@@ -20,7 +27,9 @@ label{
 }
 
 input{
-  width: 125px;
+  width: 100px;
+  height: 45px;
+  border-color: #000000 !important;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
   text-indent: center;
 
@@ -45,6 +54,32 @@ input{
   padding: 10px;
 }
 
+#profit{
+  color: green;
+}
+
+#allTime{
+  color: red;
+}
+
+
+/* #balance{
+  background-color: #bbbce2;
+}
+
+#graphic{
+  background-color: #a6a29b;
+} */
+
+
+:root{
+  --cor-bitcoin: #7b38b266;
+  --cor-usd: #3847b266;
+  --cor-ada: #b2573866;
+  --cor-bnb: #40b23866;
+  --cor-eth: #b0b23866;
+  --cor-black: #000000aa;
+}
 
 
 
