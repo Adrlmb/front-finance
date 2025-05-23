@@ -1,3 +1,44 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const ctx = document.getElementById('graficoPizza').getContext('2d');
+    const rootStyles = getComputedStyle(document.documentElement);
+
+    const corBitcoin = rootStyles.getPropertyValue('--cor-bitcoin').trim();
+    const corUSD = rootStyles.getPropertyValue('--cor-usd').trim();
+    const corADA= rootStyles.getPropertyValue('--cor-ada').trim();
+    const corBNB = rootStyles.getPropertyValue('--cor-bnb').trim();
+    const corETH = rootStyles.getPropertyValue('--cor-eth').trim();
+    const corBlack = rootStyles.getPropertyValue('--cor-black');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Bitcoin', 'USD', 'ADA', 'BNB', 'ETH'],
+      datasets: [{
+        data: [60, 25, 15, 30, 25],
+        backgroundColor: [
+          corBitcoin,
+          corUSD,
+          corADA,
+          corBNB,
+          corETH
+        ],
+        borderColor: [
+          corBlack
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: false,
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+});
+
 document.getElementById("usuarioForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita recarregar a página
 
