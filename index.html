@@ -119,24 +119,17 @@
             <button id="btnTransfer" type="button" class="btn btn-light">Transfer</button>
         </div>
 
-      </div>
-       
-              
-
-    
-       
-      
         <!-- Formulário Nova Transação -->
-        <div id="novaTransacao" class="container mt-4 overflow-auto">
-            <form id="usuarioForm">
-                <div class="d-flex gap-3 ">
+        <div id="novaTransacao" class="container mt-5 overflow-auto" style="max-width: 100%">
+            <form id="usuarioForm" class="container mt-2">
+                <div class="d-flex gap-2">
                     <div>
                         <label for="purchasedCryptoCode" class="form-label">CRYPTO CODE</label>
                         <input type="text" id="purchasedCryptoCode" class="form-control" required>
                     </div>
                     <div>
                         <label for="amountPurchased" class="form-label text-center">CRYPTO AMOUNT</label>
-                        <input type="text" id="amountPurchased" class="form-control" >
+                        <input type="text" id="amountPurchased" class="form-control">
                     </div>
                     <div>
                         <label for="cryptoUsed" class="form-label">CRYPTO USED</label>
@@ -148,11 +141,11 @@
                     </div>
                     <div>
                         <label for="amountSpent" class="form-label">AMOUNT SPENT</label>
-                        <input type="text" id="amountSpent" class="form-control" >
+                        <input type="text" id="amountSpent" class="form-control">
                     </div>
                     <div>
                         <label for="taxCryptoCode" class="form-label">CODE FEES</label>
-                        <input type="text" id="taxCryptoCode" class="form-control" >
+                        <input type="text" id="taxCryptoCode" class="form-control">
                     </div>
                     <div>
                         <label for="taxAmount" class="form-label">AMOUNT FEES</label>
@@ -160,7 +153,7 @@
                     </div>
                     <div>
                         <label for="buyDate" class="form-label">DATE</label>
-                        <input type="date" id="buyDate" class="form-control" >
+                        <input type="date" id="buyDate" class="form-control">
                     </div>
                     <div>
                         <label for="exchange" class="form-label">EXCHANGE</label>
@@ -172,7 +165,11 @@
                 </div>
             </form>
             <div id="mensagem" class="mt-3"></div>
-        </div> 
+        </div>
+
+      </div>
+       
+            
         
         <!-- Botão Atualizar -->
         <div id="botaoAtualizar" class="container mt-3 grid text-center"> 
