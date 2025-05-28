@@ -49,7 +49,7 @@ input{
 
 
 .table thead th{
-  background-color: #44a271;
+  background-color: #95B99D;
   border: 1px solid #000000;  
   padding: 10px;
 }
@@ -62,14 +62,13 @@ input{
   color: red;
 }
 
-
-/* #balance{
-  background-color: #bbbce2;
+#table tbody td {
+  background-color: #8DA3B0;  /* vermelho forte */
+  color: rgb(0, 0, 0);               /* texto branco para boa leitura */  
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #000000;
 }
 
-#graphic{
-  background-color: #a6a29b;
-} */
 
 
 :root{
